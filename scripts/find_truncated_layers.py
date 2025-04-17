@@ -1,7 +1,7 @@
 import numpy as np
 from neptune_init import init_neptune
 import argparse
-from pattlite_new import build_model_final_layers
+from scripts.backbone import build_model_final_layers
 from carica_dati_prova import carica_dati
 from tensorflow.keras.models import Model
 from losses import categorical_focal_loss

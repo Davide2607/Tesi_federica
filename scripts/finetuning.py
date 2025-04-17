@@ -2,9 +2,9 @@ import numpy as np
 import tensorflow as tf
 from neptune_init import init_neptune
 import argparse
-from pattlite_new import build_model_finetuning
+from scripts.backbone import build_model_finetuning
 import neptune
-from loading_new import carica_dati
+from scripts.loading_data import carica_dati
 import os
 
 # Funzione per addestrare il modello

@@ -2,9 +2,9 @@ import numpy as np
 import tensorflow as tf
 from neptune_init import init_neptune
 import argparse
-from pattlite_new import build_model_final_layers
+from scripts.backbone import build_model_final_layers
 import neptune
-from loading_new import carica_dati
+from scripts.loading_data import carica_dati
 
 # Funzione per addestrare il modello
 def addestra_modello(model, train_generator, valid_generator,test_generator, TRAIN_EPOCH, TRAIN_ES_PATIENCE, TRAIN_LR_PATIENCE, ES_LR_MIN_DELTA, TRAIN_MIN_LR, run, model_name):
